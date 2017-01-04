@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+/* css 초기화 */
+*{margin:0;padding:0;border:0;}
+ul,li{list-style:none;}
+a{color:black; text-decoration:none;}
+img{border:0;}
+
+/* top_nav */
+#top_nav {
+    height: 30px;
+    background-color: #252d3a;
+    color: #ddd;
+}
+
+#top_nav_contents {
+    position: relative;
+    padding-top: 2px; /* 가운데에 오도록 하는 방법?? */
+}
+
+#top_nav_contents > ul{
+    position: absolute;
+    top:5px;
+    right: 0px;
+}
+
+#top_nav_contents > ul > li {
+    float: left;
+    padding-right:15px;
+    margin-right:15px;
+    font-size: 12px;
+    color: #aaa;
+}
+
+#top_nav_contents > ul > li:nth-of-type(1),
+#top_nav_contents > ul > li:nth-of-type(2)  {
+    border-right: 1px solid #565b61
+}
+
+#top_nav_contents > ul > li:nth-of-type(4){
+    margin-right:0;
+    padding-right:0;
+}
+
+#top_nav_search {
+    margin: 0;
+    height: 25px;
+    background-color: #565b61;
+    border: none;
+}
+
+#top_nav_search_btn{
+    float:right;
+}
+
+#logo{
+    margin-top: 37px;
+}
+
+/* grand_nav */
+#grand_nav {
+    height: 60px;
+    background-color: #FFF;
+    color: #444;
+}
+
+#grand_nav_contents {
+
+}
+
+#grand_nav_contents > ul {
+    float: right;
+}
+
+#grand_nav_contents > ul > li {
+    float: left;
+    margin-top:30px;
+    margin-right:30px;
+}
+
+#top_nav_contents, #grand_nav_contents{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+/* jumbotron */
+#jumbotron {
+    clear: both;
+    height: 500px;
+    background-image: url("../img/visual03.jpg" );
+    border-top: 4px solid #f47226;
+    border-bottom: 10px solid #f8cb0e;
+}
+
+/* main_contents */
+#main_section {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.notice {
+    display: inline-block;
+    width: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+}
+
+.notice h2 {
+    font-size: 20px;
+    color: #444;
+}
+
+.notice > ul {
+
+}
+
+.notice ul li {
+    margin-top: 5px;
+}
+
+.notice ul li:nth-of-type(1) {
+    float:left;
+}
+
+.notice ul li:nth-of-type(2) {
+    float:right;
+}
+
+.notice ul li , .notice ul li a {
+    font-size: 12px;
+    color:#555;
+}
+
+footer {
+    position: relative;
+    height: 150px;
+    background-color: #35393d;
+}
+
+#footer_wrapper {
+    padding-top: 35px;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+#footer_logo_wrapper{
+    width: 100px;
+    float: left;
+}
+
+#footer_contents {
+    float: left;
+}
+
+#footer_contents > ul{
+    float: left;
+    margin-bottom:15px;
+}
+
+#footer_contents > ul > li{
+    float: left;
+    padding-right: 15px;
+    margin-right: 15px;
+    border-right: 1px solid #ddd;
+}
+
+#footer_contents > ul > li > a{
+    color: #ddd;
+    font-weight: 700;
+}
+
+#footer_contents > p{
+    clear: both;
+    color: #ddd;
+    font-size: 10px;
+}
+
+#footer_sns {
+    float: right;
+}
