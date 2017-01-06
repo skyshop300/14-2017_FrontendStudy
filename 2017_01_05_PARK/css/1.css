@@ -16,9 +16,9 @@
 }
 #box3 {
   float: none;
-  width: 50%;
-  width: auto;
+  /*width: 50%;*/
   margin-left: 300px;
+  
   /*font-size: 15px;*/
 
 }
