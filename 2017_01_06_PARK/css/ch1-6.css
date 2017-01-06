@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+#boxA {
+    position: relative;
+}
+
+#box1 {
+    line-height: 200px;
+}
+
+#box2{
+    line-height: 100px;
+    position: absolute;
+    top: 30px;
+    left: 100px;
+}
