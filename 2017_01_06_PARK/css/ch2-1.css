@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+#site h1 a {
+    color: #69C;
+    text-decoration: none;
+    font-family: "맑은 고딕";
+}
+
+#site h1 {
+    margin: 0;
+    font-size: 50px;
+}
+
+#site p {
+    margin: 0;
+    font-size: 20px;
+}
+
+#story {
+    border: 1px solid #d55;
+}
+
+#story h1 {
+    font-size: 30px;
+    border-bottom: 1px solid #da1;
+    margin-bottom: 50px;
+}
+
+#story p {
+    border-bottom: 1px solid #da1;
+    margin-bottom: 50px;
+}
+
+#menu_vertical li a {
+    display: block;    /*하나의 가로열을 모두 차지한다.*/
+    padding: 5px;
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#menu_vertical li a:hover {
+    background-color: #d88;
+    transition: 0.5s;
+}
+
+#menu_horizontal ul li a {
+    padding: 5px;
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+    float: left;
+}
+
+#menu_horizontal li a:hover {
+    background-color: #d88;
+    transition: 0.5s;
+}
