@@ -16,11 +16,10 @@
 
 				$('nav a').click(function(e){
 					$.scrollTo(this.hash || 0, 1500);
-					e.prevendDefault();
+					e.preventDefault();
 				});
 
 			});
-
 		</script>
 	</head>
 	<body>
@@ -42,18 +41,20 @@
 			</nav>
 
 			<!-- main_section -->
-			<section id="1" class="page1">
-				<h2>Flat Design</h2>
-			</section>
-			<section id="2" class="page2">
-				<h2>Parallax Scrolling</h2>
-			</section>
-			<section id="3" class="page3">
-				<h2>Fullscreen Background</h2>
-			</section>
-			<section id="4" class="page4">
-				<h2>Typography</h2>
-			</section>
+			<div>
+				<section id="1" class="page1">
+					<h2>Flat Design</h2>
+				</section>
+				<section id="2" class="page2">
+					<h2>Parallax Scrolling</h2>
+				</section>
+				<section id="3" class="page3">
+					<h2>Fullscreen Background</h2>
+				</section>
+				<section id="4" class="page4">
+					<h2>Typography</h2>
+				</section>
+			</div>
 
 		</div>
 
