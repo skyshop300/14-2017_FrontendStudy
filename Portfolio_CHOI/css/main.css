@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+/* main_section */
+#main_section{
+    position: relative;
+    float:left;
+    width:80%;
+    height:100%;
+    background-color: #555;
+}
+
+
+/* article_home */
+#article_home{
+    position: relative;
+    width:100%;
+    height:500px;
+    background-color:green;
+}
+
+/* article_about */
+#article_about{
+    position: relative;
+    width:100%;
+    height:500px;
+    background-color:yellowgreen;
+}
+
+/* article_profile */
+#article_profile{
+    position: relative;
+    width:100%;
+    height:500px;
+    background-color:hotpink;
+}
+
+/* article_portfolio */
+#article_portfolio{
+    position: relative;
+    width:100%;
+    height:500px;
+    background-color:gray;
+}
+
+/* article_skills */
+#article_skills{
+    position: relative;
+    width:100%;
+    height:500px;
+    background-color:blue;
+}
+
+/* article_blog */
+#article_blog{
+    position: relative;
+    width:100%;
+    height:500px;
+    background-color:skyblue;
+}
+
+/* article_contact */
+#article_contact{
+    position: relative;
+    width:100%;
+    height:500px;
+    background-color:red;
+}
