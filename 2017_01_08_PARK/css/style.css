@@ -80,12 +80,31 @@ body	{font-family: '맑은 고딕', 'Apple SD Gothic Neo', sans-serif}
 	font-size: 20px;
 }
 
-
 .story h2 {
 	margin-top: 40px;
 	padding-left: 8px;
 	border-left: 8px solid #f88;
 	font-weight: 500;
+}
+
+.story_sns ul {
+
+}
+
+.story_sns ul li {
+
+}
+
+.story_sns ul li .facebook {
+
+}
+
+.story_sns ul li .google {
+
+}
+
+.story_sns ul li .kakao {
+
 }
 
 
@@ -126,14 +145,16 @@ body	{font-family: '맑은 고딕', 'Apple SD Gothic Neo', sans-serif}
 	width: auto;
 }
 
-/* 사이드메뉴 */
-.sidemenu ul {
+
+/* 사이드 메뉴 */
+/* 특집 기사 */
+.sidemenu ul, .recommend ul, .popular ul{
 	margin:0;
 	padding:0;
 	list-style: none;
 }
 
-.sidemenu li a {
+.sidemenu li a, .recommend li a, .popular li a {
 	display: block;
 	padding: 5px;
 	color: #333;
@@ -141,17 +162,26 @@ body	{font-family: '맑은 고딕', 'Apple SD Gothic Neo', sans-serif}
 	text-decoration: none;
 }
 
-.sidemenu li a i {
+.sidemenu {
+	margin-bottom: 10px;
+}
+
+.popular li a {
+	color: #e66;
+	border-bottom: 1px dotted #ddd;
+}
+
+.sidemenu li a i, .recommend li a i, .popular li a i{
 
 	padding-right: 10px;
 	color: #faa;
 }
 
-.sidemenu li a:hover {
+.sidemenu li a:hover, .recommend li a:hover, .popular li a:hover {
 	background-color: #eee;
 }
 
-.sidemenu h1 {
+.sidemenu h1, .recommend h1, .popular h1{
 	margin-top: 0;
 	margin-bottom: 10px;
 	border-bottom: dotted 2px #ddd;
@@ -159,15 +189,69 @@ body	{font-family: '맑은 고딕', 'Apple SD Gothic Neo', sans-serif}
 	font-size: 18px;
 }
 
-.sidemenu img {
+.popular img {
 	width: 60px;
 	height: 60px;
 	background-repeat: no-repeat;
 	background-size: contain;
 }
 
-.sidemenu:nth-child(2), .sidemenu:nth-child(3) {
+
+/* 추천 아이템 */
+.recommend, .popular {
 	margin-top: 30px;
+}
+
+.recommend img {
+	width: 100%;
+	height: auto;
+	border: none;
+	vertical-align: bottom;
+}
+
+.recommend .text {
+	box-sizing: border-box;
+	padding: 5px 10px; /*상하, 좌우*/
+	background-color: rgba(240, 80, 80, 0.7);
+	color: #fff;
+}
+
+.recommend li a {
+	position: relative;
+	padding: 0;
+}
+
+.recommend a .text {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+
+/* 인기 아이템 */
+.popular a:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.popular img {
+	float: left;
+	width: 60px;
+}
+
+.popular .text {
+	float: none;
+	margin-bottom: 10px;
+	width: auto;
+	margin-left: 60px;
+	padding-left: 15px;
+}
+
+.popular span {
+	display: block;
+	color: #777;
 }
 
 
@@ -179,7 +263,7 @@ body	{font-family: '맑은 고딕', 'Apple SD Gothic Neo', sans-serif}
 }
 
 
-/* box2를 바 형태화*/
+/* box2를 바 형태화 */
 .box2 {
 	background-color: #e88;
 	margin-bottom: 10px;
