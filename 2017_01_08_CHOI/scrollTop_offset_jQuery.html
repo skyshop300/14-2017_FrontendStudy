@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{height:3000px;}
+        p{font-size:30px; position: fixed; top:0px; left:0px;}
+        div{width:200px; height:200px; background:blue; margin-top:300px;}
+    </style>
+    <script src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+
+            $(window).on("scroll", function(){
+
+                var location = $(this).scrollTop();
+                $("p").text("scrollTop 현재 위치는 : " + location);
+
+                var location2 = $("div").offset().top;
+                $("h1").text("offset().top 현재 위치는 : " + location2);
+
+            });
+
+
+
+
+        });
+
+    </script>
+</head>
+<body>
+
+    <p></p>
+
+    <div></div>
+
+    <h1></h1>
+
+</body>
+</html>

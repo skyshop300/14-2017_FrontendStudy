@@ -14,7 +14,7 @@
 #article_home{
     position: relative;
     width:100%;
-    height:500px;
+    height:700px;
     background-color:green;
 }
 
@@ -22,7 +22,7 @@
 #article_about{
     position: relative;
     width:100%;
-    height:500px;
+    height:700px;
     background-color:yellowgreen;
 }
 
@@ -30,7 +30,7 @@
 #article_profile{
     position: relative;
     width:100%;
-    height:500px;
+    height:700px;
     background-color:hotpink;
 }
 
@@ -38,7 +38,7 @@
 #article_portfolio{
     position: relative;
     width:100%;
-    height:500px;
+    height:700px;
     background-color:gray;
 }
 
@@ -46,7 +46,7 @@
 #article_skills{
     position: relative;
     width:100%;
-    height:500px;
+    height:700px;
     background-color:blue;
 }
 
@@ -54,7 +54,7 @@
 #article_blog{
     position: relative;
     width:100%;
-    height:500px;
+    height:700px;
     background-color:skyblue;
 }
 
@@ -62,6 +62,6 @@
 #article_contact{
     position: relative;
     width:100%;
-    height:500px;
+    height:700px;
     background-color:red;
 }
