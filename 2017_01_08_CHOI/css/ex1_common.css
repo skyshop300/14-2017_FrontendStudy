@@ -211,6 +211,8 @@ header{
     right:-800px;
     background: #111;
     opacity:0.5;
+    transform: skewX(-40deg);
+    transition:all 0.5s;
 }
 
 #side:hover{
@@ -234,9 +236,89 @@ header{
     left:50px;
 }
 
+#side .con p{
+  width:300px;
+  height:100px;
+  position: absolute;
+  left:50px;
+}
 
+#side .con p em{
+  display: inline-block;
+  font:bold 16px/1.7 arial;
+  color:#a0bd50;
+  transform:skewX(40deg);
+}
 
+#side .con p img{
+  width:300px;
+  height:70px;
+  opacity:0.3;
+  transition:all 0.5s;
+}
 
+#side .con p img:hover{
+  opacity: 1;
+}
 
+#side .con p:nth-child(1){
+  bottom:270px;
+  transform: translateX(200px);
+  transition:all 0.4s;
+}
 
-.
+#side .con p:nth-child(2){
+  bottom:160px;
+  transform: translateX(200px);
+  transition:all 1.2s;
+}
+
+#side .con p:nth-child(3){
+  bottom:50px;
+  transform:translateX(200px);
+  transition:all 2.0s;
+}
+
+#side:hover .con p {
+  transform:translateX(0px);
+}
+
+/* 자동 롤링 버튼 */
+#side .btnContents{
+  width:150px;
+  height:50px;
+  position: absolute;
+  bottom: 40px;
+  left:100px;
+  color:#b9fb05;
+  transform:skewX(40deg);
+}
+
+#side:hover .btnContents{
+  left:700px;
+}
+
+.btnContents i {
+  font-size:60px;
+  position: absolute;
+  bottom:0px;
+  right:0px;
+  opacity:1;
+}
+
+.btnContents i:nth-child(1){
+  animation: ani linear 1.5s 0s infinite;
+}
+
+.btnContents i:nth-child(2){
+  animation: ani linear 1.5s 0.5s infinite;
+}
+
+.btnContents i:nth-child(3){
+  animation: ani linear 1.5s 1.0s infinite;
+}
+
+@keyframes ani {
+  0% {right:0px; transform:scale(1); opacity:1;}
+  100% {right:100px; transform:scale(1.5); opacity:0;}
+}
