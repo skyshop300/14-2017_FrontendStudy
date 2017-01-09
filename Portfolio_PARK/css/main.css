@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+html, body, section {
+    height: 100%
+}
+
+/* 레이아웃 */
+section, article, span, div, nav {
+    border: 1px solid #f99;
+    background-color: #fdd;
+}
+
+#grand_nav {
+    position: absolute;
+    float: left;
+    height: 100%;
+    width: 250px;
+}
+
+
+/* 메인 */
+#main {
+    position: relative;
+}
+
+#main_menu {
+    width: 150px;
+    height: 100px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 45px;
+    cursor:pointer;
+}
+
+#main_title {
+    position: absolute;
+    box-sizing: border-box;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+    font-size: 100px;
+}
+
+
+/* 포트폴리오 */
+#portfolio {
+    position: relative;
+}
+
+#portfolio_title, #skills_title,
+#experience_title, #contact_title {
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+    font-size: 100px;
+}
+
+
+/* 보유기술 */
+
+
+
+/* 경험 및 약력 */
+
+
+
+/* 연락처 */
