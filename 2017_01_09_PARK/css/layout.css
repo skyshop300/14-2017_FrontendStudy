@@ -3,4 +3,61 @@
 div {
     border: 1px solid #F55;
     background-color: #Fdd;
+    box-sizing: border-box;
+}
+
+/*  사이트 이름  */
+#site h1 a {
+    margin:0;
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+/*  메뉴  */
+#menu ul {
+
+}
+
+#menu li {
+    float: left;
+}
+
+#menu li a {
+    color: #333;
+}
+
+#menu ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/*  메인 이미지 */
+#main_img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+
+/*  768px 이상  */
+@media (min-width: 767px) {
+    #boxA:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    #box1 {
+
+        float: left;
+        width: 50%;
+    }
+
+    #box2 {
+        float: left;
+        width: 50%;
+    }
 }
