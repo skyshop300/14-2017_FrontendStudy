@@ -1,5 +1,329 @@
 @charset "UTF-8";
 
-section {
-    border: 1px solid #fdd;
+/*
+div {
+    border: 1px solid #F55;
+    background-color: #Fdd;
+    box-sizing: border-box;
+}*/
+
+
+/*  메뉴바  */
+#boxA {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccf;
+}
+
+/*  사이트 이름  */
+#site i {
+    margin-right: 10px
+}
+
+#site h1 a {
+    display: block;
+    margin:0;
+    padding-top: 15px;
+    color: #458;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+
+/*  메뉴  */
+#menu ul {
+
+}
+
+#menu li {
+    float: left;
+}
+
+#menu li a {
+    display: block;
+    padding: 20px 15px;
+    color: #444;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#menu ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/*  메인 이미지 */
+#main_img {
+    height: 600px;
+    background-image: url("../img/pigeons.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*  대학 소개  */
+#summary {
+    margin-top: 20px;
+}
+
+.summary {
+    box-sizing: border-box;
+}
+
+.summary a {
+    display: block;
+    text-align: center;
+}
+
+#summary_1 a {
+    background-color: #a44;
+}
+
+#summary_2 a {
+    background-color: #44a;
+}
+
+#summary_3 a {
+    background-color: #8a4;
+}
+
+.summary i {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.summary h1, .summary p {
+    display: block;
+    padding: 10px;
+    color: #fff;
+}
+
+.summary h1 {
+    font-size: 20px;
+    background-color: #333;
+}
+
+.summary p {
+    background-color: #555;
+}
+
+
+/*  공지사항  */
+#news h1 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #666;
+}
+
+#news ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#news li a {
+    display: block;
+    padding: 5px;
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#news li a:hover {
+    background-color: #ddd;
+}
+
+#news a:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#news time {
+    float: left;
+    margin-right: 10px;
+    color: #888;
+    font-weight: 600;
+}
+
+#news .text {
+    float: none;
+    width: auto;
+    margin-left: 60px;
+}
+
+
+/*  sns  */
+#sns #follow_info {
+    background-color: #666;
+}
+
+#sns li a, #sns p {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+    color: #fff;
+}
+
+#sns p {
+    text-align: center;
+}
+
+#sns li a:hover {
+    opacity: 0.8
+}
+
+#sns i {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+#sns #facebook {
+    background-color: #5288f7;
+}
+
+#sns #twitter {
+    background-color: #63bafb;
+}
+
+#sns #google {
+    background-color: #f65d4a;
+}
+
+
+/*  저작권 표시  */
+#box5 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #333;
+}
+
+#copyright {
+    color: #888;
+    font-size: 15px;
+}
+
+/*  박스의 좌우  */
+#boxA, #box4, #box5 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+#box4 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/*  599px 이하  */
+@media (max-width: 599px) {
+    #menu li a {
+        padding: 10px 7px;
+        font-size: 12px
+    }
+}
+
+/*  768px 이상  */
+@media (min-width: 767px) {
+    #boxA:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    #box1 {
+        float: left;
+        width: auto;
+    }
+
+    #box2 {
+        float: right;
+        width: auto;
+    }
+
+    #box4:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+
+    /*  대학 소개  */
+    .summary {
+        float: left;
+        width:33.3333%;
+    }
+
+    .summary i {
+        color: #fff;
+        font-size: 70px;
+    }
+
+    .summary {
+        padding-right: 20px;
+    }
+
+
+    /*  공지사항  */
+    #news {
+        float: left;
+        width: 65%;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+
+    #news {
+        border-right: 1px solid #ddd;
+    }
+
+
+    /*  sns  */
+    #sns {
+        float: left;
+        width: 35%;
+        box-sizing: border-box;
+    }
+
+    #sns li {
+        margin-left: 20px;
+    }
+
+}
+
+/*  1190px 이상  */
+@media (min-width: 1190px) {
+    #box3, #box4 {
+        width: 1140px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #boxA_wrapper {
+        width: 1140px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #summary_wrapper {
+        width: 1140px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .summary i {
+        color: #fff;
+        font-size: 99px;
+    }
+
 }
