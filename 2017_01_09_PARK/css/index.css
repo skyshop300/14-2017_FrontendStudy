@@ -1,12 +1,6 @@
 @charset "UTF-8";
 
-/*
-div {
-    border: 1px solid #F55;
-    background-color: #Fdd;
-    box-sizing: border-box;
-}*/
-
+body	{font-family: '맑은 고딕', 'Apple SD Gothic Neo', sans-serif}
 
 /*  메뉴바  */
 #boxA {
@@ -32,39 +26,34 @@ div {
 
 
 /*  메뉴  */
-#menu ul {
-
-}
-
-#menu li {
-    float: left;
-}
-
-#menu li a {
-    display: block;
-    padding: 20px 15px;
-    color: #444;
-    font-size: 14px;
-    text-decoration: none;
-}
-
-#menu ul:after {
-    content: "";
-    display: block;
-    clear: both;
-}
 
 
 /*  메인 이미지 */
 #main_img {
+    position: relative;
     height: 600px;
     background-image: url("../img/pigeons.jpg");
     background-size: cover;
     background-position: center;
 }
 
+#main_title {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    color: #fff;
+    font-size: 70px;
+    text-align: center;
+}
+
 
 /*  대학 소개  */
+#box6 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 #summary {
     margin-top: 20px;
 }
@@ -93,6 +82,7 @@ div {
 .summary i {
     padding-top: 20px;
     padding-bottom: 20px;
+    color: #fff;
 }
 
 .summary h1, .summary p {
@@ -102,11 +92,13 @@ div {
 }
 
 .summary h1 {
-    font-size: 20px;
+    font-size: 16px;
     background-color: #333;
 }
 
 .summary p {
+    min-height: 25px;
+    font-size: 13px;
     background-color: #555;
 }
 
@@ -166,8 +158,8 @@ div {
     display: block;
     width: 100%;
     margin-bottom: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     border-radius: 3px;
     color: #fff;
 }
@@ -181,8 +173,8 @@ div {
 }
 
 #sns i {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 6px;
+    margin-right: 6px;
     font-size: 25px;
     vertical-align: middle;
 }
@@ -226,11 +218,77 @@ div {
 
 
 /*  599px 이하  */
-@media (max-width: 599px) {
+@media (max-width: 768px) {
+
+    #box2 button {
+        height: 30px;
+        width: 40px;
+        background-color: #fff;
+        border: 1px solid #bbb;
+    }
+
     #menu li a {
         padding: 10px 7px;
         font-size: 12px
     }
+
+    #menu {
+        display: none;
+    }
+
+    #menubtn {
+        position: absolute;
+        top: 20px;
+        right: 15px;
+    }
+
+    #menubtn p {
+        display: block;
+        width: 100%;
+        background-color: #fff;
+
+    }
+
+    #menubtn i {
+        border: none;
+        color: #444;
+        font-size: 20px;
+
+    }
+
+
+    /*  메인메뉴  */
+    #menu li a {
+        display: block;
+        padding: 15px 15px;
+        color: #444;
+        font-size: 12px;
+        text-decoration: none;
+    }
+
+    #menu li a:hover {
+        background-color: #ddd;
+    }
+
+    #menu ul:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+
+    #main_title {
+        font-size: 40px;
+    }
+
+    .summary {
+        margin-bottom: 10px;
+    }
+
+    .summary i {
+        font-size: 70px;
+    }
+
 }
 
 /*  768px 이상  */
@@ -258,19 +316,53 @@ div {
     }
 
 
+    /*  메인메뉴  */
+    #menubtn {
+        display: none;
+    }
+
+    #menu li {
+        float: left;
+    }
+
+    #menu li a {
+        display: block;
+        padding: 20px 15px;
+        color: #444;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    #menu li a:hover {
+        background-color: #ddd;
+    }
+
+    #menu ul:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    /*  메인이미지 타이틀 */
+    #main_title {
+        font-size: 50px;
+    }
+
+
     /*  대학 소개  */
     .summary {
         float: left;
+        margin-bottom: 20px;
         width:33.3333%;
     }
 
     .summary i {
         color: #fff;
-        font-size: 70px;
+        font-size: 60px;
     }
 
-    .summary {
-        padding-right: 20px;
+    #summary_1, #summary_2 {
+        padding-right: 10px;
     }
 
 
@@ -302,7 +394,7 @@ div {
 
 /*  1190px 이상  */
 @media (min-width: 1190px) {
-    #box3, #box4 {
+    #box4, #box5_wrapper {
         width: 1140px;
         margin-left: auto;
         margin-right: auto;
@@ -320,10 +412,13 @@ div {
         margin-right: auto;
     }
 
+    #main_title {
+        font-size: 70px;
+    }
+
 
     .summary i {
-        color: #fff;
-        font-size: 99px;
+        font-size: 70px;
     }
 
 }
